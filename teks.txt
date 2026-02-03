@@ -1,153 +1,265 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>happy birthday, ma sayang 🤍</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Happy Birthday Ma Sayang 🎂</title>
 
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: linear-gradient(180deg, #fde2ea, #fff1f6);
-      font-family: 'Segoe UI', sans-serif;
-      color: #5a3d4f;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-transform: lowercase;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 20px;
-      padding: 24px;
-      max-width: 420px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(135deg, #fde2e4, #f9c5d1, #fff1f2);
       text-align: center;
-    }
-
-    h1, p {
-      opacity: 0;
-      transform: translateY(10px);
-      animation: fadeUp 1.2s ease forwards;
+      overflow-x: hidden;
     }
 
     h1 {
-      font-size: 1.6em;
-      margin-bottom: 18px;
-      animation-delay: 0.3s;
+      margin-top: 50px;
+      font-size: 2.6em;
+      color: #ff6f91;
+      animation: pop 1.5s infinite;
     }
 
     p {
-      font-size: 0.95em;
-      line-height: 1.6em;
-      margin-bottom: 14px;
+      font-size: 1.15em;
+      color: #444;
+      margin: 12px 25px;
+      line-height: 1.6;
     }
 
-    .p1 { animation-delay: 0.8s; }
-    .p2 { animation-delay: 1.6s; }
-    .p3 { animation-delay: 2.4s; }
-    .p4 { animation-delay: 3.2s; }
-    .p5 { animation-delay: 4.0s; }
-    .p6 { animation-delay: 4.8s; }
-    .p7 { animation-delay: 5.6s; }
-    .p8 { animation-delay: 6.4s; }
+    img {
+      width: 220px;
+      border-radius: 20px;
+      margin-top: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    }
+
+    button {
+      margin: 30px 0 40px;
+      padding: 15px 28px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 30px;
+      background: #ff8fab;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    button:hover {
+      background: #ff6f91;
+    }
+
+    /* stickers */
+    .stickers {
+      margin-top: 15px;
+    }
+
+    .stickers img {
+      width: 75px;
+      margin: 0 10px;
+      animation: wiggle 2.5s infinite;
+    }
+
+    /* cake & candle */
+    .cake-area {
+      margin-top: 25px;
+      position: relative;
+    }
 
     .cake {
-      font-size: 4em;
+      font-size: 90px;
+    }
+
+    .candle {
+      font-size: 50px;
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
       cursor: pointer;
-      margin: 20px 0;
-      opacity: 0;
-      animation: fadeUp 1.2s ease forwards;
-      animation-delay: 7.2s;
+      animation: flame 1s infinite;
     }
 
-    .note {
-      font-size: 0.8em;
-      opacity: 0;
-      animation: fadeUp 1.2s ease forwards;
-      animation-delay: 7.8s;
+    .hint {
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 10px;
     }
 
-    @keyframes fadeUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    /* animations */
+    .heart {
+      position: absolute;
+      color: red;
+      font-size: 22px;
+      animation: float 5s linear infinite;
+    }
+
+    @keyframes float {
+      from { transform: translateY(100vh); opacity: 1; }
+      to { transform: translateY(-10vh); opacity: 0; }
+    }
+
+    @keyframes pop {
+      0%,100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    @keyframes wiggle {
+      0%,100% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      75% { transform: rotate(-5deg); }
+    }
+
+    @keyframes flame {
+      0%,100% { transform: translateX(-50%) scale(1); }
+      50% { transform: translateX(-50%) scale(1.1); }
+    }
+
+    @keyframes popSticker {
+      0%,100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="card">
-    <h1>happy 18th birthday, ma sayang 🎂🤍</h1>
-
-    <p class="p1">
-      today ma sayang is officially eighteen years old.  
-      nggak kerasa ya, sekarang ma sayang udah 18.  
-      banyak banget cerita dan proses yang udah dilewatin sampai sejauh ini,  
-      dan lia bersyukur banget bisa ada di hari spesial ini 🥺
-    </p>
-
-    <p class="p2">
-      pelan-pelan, tanpa lia sadari,  
-      kehadiran ma sayang jadi hal penting di hidup lia.  
-      hari-hari biasa terasa lebih hangat,  
-      dan hari berat jadi sedikit lebih ringan,  
-      cuma karena lia tau ma sayang ada 🤍
-    </p>
-
-    <p class="p3">
-      turning eighteen is a new chapter, ma sayang.  
-      mungkin rasanya campur aduk,  
-      tapi semoga ke depannya lebih banyak hal baik yang datang ✨
-    </p>
-
-    <p class="p4">
-      lia bangga banget sama ma sayang.  
-      bangga sama semua proses,  
-      sama cara ma sayang bertahan dan terus nyoba walaupun capek 🤍
-    </p>
-
-    <p class="p5">
-      makasih ya udah hadir di hidup lia.  
-      makasih udah jadi diri ma sayang yang apa adanya.  
-      makasih udah tetap berusaha setiap hari 🥺
-    </p>
-
-    <p class="p6">
-      mungkin ma sayang nggak selalu sadar,  
-      tapi senyum kecil dan cerita sederhana ma sayang  
-      selalu punya tempat spesial di hati lia 🤍
-    </p>
-
-    <p class="p7">
-      lia has always loved ma sayang.  
-      bukan cuma hari ini,  
-      tapi di setiap langkah ke depan.
-    </p>
-
-    <p class="p8">
-      happy eighteenth, ma sayang.  
-      lia so grateful for ma sayang,  
-      today, tomorrow, and always 🎂🤍🥺
-    </p>
-
-    <div class="cake" onclick="blowCandle()">🎂🕯️</div>
-    <div class="note">tap kuenya buat tiup lilin 🤍</div>
-  </div>
-
-  <audio autoplay loop>
-    <source src="https://cdn.pixabay.com/audio/2022/10/03/audio_5c5b0c7c64.mp3" type="audio/mpeg">
+  <!-- 🎶 MUSIC -->
+  <audio id="bgm" loop>
+    <source src="ive-always-loved-you.mp3" type="audio/mpeg">
   </audio>
 
+  <h1>🎂 Happy Birthday Reihan Adit Tama 🎉</h1>
+
+  <!-- stickers -->
+  <div class="stickers">
+    <img src="sticker-bear.png" alt="bear">
+    <img src="sticker-love.png" alt="love">
+    <img src="sticker-cake.png" alt="cake">
+  </div>
+
+  <!-- photo -->
+  <img src="foto-reihan.jpg" alt="Ma Sayang">
+
+  <!-- cake -->
+  <div class="cake-area">
+    <div class="cake">🎂</div>
+    <div class="candle" id="candle">🕯️</div>
+    <p class="hint">Tap the candle, ma sayang 🤍</p>
+  </div>
+
+  <!-- text -->
+  <p>Hi ma sayang 🤍</p>
+
+  <p>
+    Today is your special day, ma sayang,  
+    and I just want to say how grateful I am to have ma sayang in my life.  
+    Pelan-pelan, kehadiran ma sayang jadi tempat paling nyaman buat aku 🥺
+  </p>
+
+  <p>
+    Ma sayang makes my ordinary days feel warmer,  
+    my bad days feel lighter,  
+    and my good days feel even better just by knowing ma sayang is there.
+  </p>
+
+  <p>
+    Di umur yang baru ini, semoga semua hal baik selalu datang ke hidup ma sayang.  
+    Semoga ma sayang selalu sehat, kuat, dan tetap jadi Reihan yang aku kenal —  
+    gentle, kind, and deeply special 🤍
+  </p>
+
+  <p>
+    I may not always say it out loud, ma sayang,  
+    but I’m really proud.  
+    Proud of who ma sayang are,  
+    proud of how far ma sayang have come,  
+    and proud of every dream ma sayang is still chasing ✨
+  </p>
+
+  <p>
+    Thank you for existing, for trying every day,  
+    and for being ma sayang.  
+    Whenever things feel heavy,  
+    I hope ma sayang remember there is always love and support here 🤍
+  </p>
+
+  <button onclick="surprise()">Click this, ma sayang 💌</button>
+
+  <p style="margin-top:40px; font-size:1.1em; color:#777; opacity:0; animation: fadeIn 4s forwards;">
+    I’ve always loved you, ma sayang.
+  </p>
+
   <script>
-    function blowCandle() {
-      document.querySelector('.cake').innerHTML = '🎂✨';
-      alert('make a wish, ma sayang 🤍');
+    // candle interaction
+    const candle = document.getElementById("candle");
+    if (candle) {
+      candle.addEventListener("click", () => {
+        candle.innerHTML = "💨";
+        candle.style.animation = "none";
+
+        setTimeout(() => {
+          candle.innerHTML = "🤍";
+        }, 600);
+
+        setTimeout(() => {
+          alert(
+            "Make a wish, ma sayang 🤍\n\n" +
+            "May this year bring peace, warmth, and happiness.\n" +
+            "I’ll always wish the best for ma sayang 🎂"
+          );
+        }, 900);
+      });
+    }
+
+    function surprise() {
+      const music = document.getElementById("bgm");
+      music.volume = 0;
+      music.play();
+
+      let vol = 0;
+      const fadeIn = setInterval(() => {
+        if (vol < 1) {
+          vol += 0.02;
+          music.volume = vol;
+        } else {
+          clearInterval(fadeIn);
+        }
+      }, 150);
+
+      alert(
+        "Happy Birthday, ma sayang ❤️\n\n" +
+        "I hope this year brings ma sayang closer to every dream.\n" +
+        "May happiness and health always stay with ma sayang.\n\n" +
+        "Ma sayang means more than words can explain 🤍"
+      );
+
+      for (let i = 0; i < 35; i++) {
+        let heart = document.createElement("div");
+        heart.className = "heart";
+        heart.innerHTML = "❤️";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 5000);
+      }
+
+      // emoji sticker
+      let cuteSticker = document.createElement("div");
+      cuteSticker.innerHTML = "🎂🤍🥺";
+      cuteSticker.style.position = "fixed";
+      cuteSticker.style.bottom = "25px";
+      cuteSticker.style.right = "25px";
+      cuteSticker.style.fontSize = "55px";
+      cuteSticker.style.animation = "popSticker 1.5s ease-in-out infinite";
+      document.body.appendChild(cuteSticker);
+
+      setTimeout(() => cuteSticker.remove(), 6000);
     }
   </script>
 
